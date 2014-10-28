@@ -1,0 +1,179 @@
+/*-----------*/
+/*TYPOGRAPHY*/
+/*-----------*/
+
+body {
+    font-family: 'Courier New';
+}
+
+/*---------*/
+/*LOGO*/
+/*---------*/
+
+.logo {
+    /*font-family: 'Arial';*/
+    font-weight: normal;
+    font-size: 30px;
+    margin: 5px 0 60px 0;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+/*----------*/
+/*DONATE BUTTON*/
+/*----------*/
+
+a#donate-page {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+/*----------*/
+/*LAYOUT*/
+/*----------*/
+
+/*------------*/
+/*HEADER*/
+/*------------*/
+
+section.top {
+    position: relative;
+    padding: 5px 0;
+    /*height: 100%;*/
+    /*height: 50px;*/
+}
+
+.left-side-bar{
+    float: left;
+    width: 150px;
+    height: 100%;
+}
+
+.central-content{
+    float: left;
+    width: 750px;
+    height: 100%;
+    margin: 5px;
+}
+
+.right-side-bar{
+    float: right;
+    width: 50px;
+    height: 100%;
+}
+
+section.content{
+
+}
+
+.paperclip{
+    margin-top: 270px;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+section.menu {
+    padding: 10px 0;
+}
+
+header section {
+    border-bottom: 1px solid black;
+}
+
+nav ul li:before{
+    /*content:"-"; position:relative; left:-5px;*/
+}
+
+nav ul li{
+    display: inline;
+    vertical-align: middle;
+    /*text-indent:-5px;*/
+}
+
+nav a {
+    padding: 2px 1px;
+    vertical-align: middle;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    background: black;
+}
+
+/*-------*/
+/*NEWS ARTICLE*/
+/*-------*/
+
+#content {
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+article.news {
+    margin: 5px 0;
+    background: #eee;
+    display: flex;
+}
+
+.news img.news-image {
+    width: 10%;
+}
+
+.news-text {
+    position: relative;
+    flex: 7;
+    margin: 30px 30px 30px 50px;
+    line-height: 20px;
+}
+
+.news-text a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    padding: 3px 6px 3px 3px;
+}
+
+.news-text a:hover {
+    background: white;
+    color: black;
+}
+
+/*-----------*/
+/*RUNNING MAN*/
+/*-----------*/
+
+#running-man {
+    padding: 50px 0 0 0;
+    border-bottom: 1px solid black;
+}
+
+#running-man img {
+    width: 106px;
+}
+
+/*---------*/
+/*FOOTER*/
+/*--------*/
+
+footer {
+    text-align: right;
+    font-size: 0.7em;
+    padding: 10px 0;
+}
+
+footer address {
+    /*width: 20%;*/
+    float: right;
+}
+
+
