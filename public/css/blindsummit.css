@@ -160,7 +160,35 @@ article.news {
 /*PUPPETRY QUOTE*/
 /*--------------*/
 
-#puppetry-quote {
+#puppet-quote {
+    text-align: center;
+    padding: 0 150px;
+}
+
+#puppet-quote h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#puppet-quote blockquote {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #111;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+#puppet-quote blockquote:before {
+    content: open-quote;
+}
+
+#puppet-quote blockquote:after {
+    content: close-quote;
+}
+
+#puppet-quote p {
+    text-align: right;
+    font-style: italic;
+    color: #555;
 }
 
 /*-----------*/
