@@ -204,6 +204,10 @@ article.news:first-of-type {
     margin:  0 0;
 }
 
+article.latest-news:first-of-type{
+    margin: 35px 0;
+}
+
 .news .image-wrapper {
     flex: 1;
     margin: 0;
@@ -304,9 +308,15 @@ footer #mc_embed_signup label {
 }
 
 footer #mc_embed_signup input {
+    font-family: 'Courier New';
     display: inline;
-
 }
+
+input.button {
+    font-family: 'Courier New';
+    display: inline;
+}
+
 footer h2 {
     margin: 0 5px;
 }
@@ -316,5 +326,10 @@ footer address {
     /*width: 20%;*/
     float: right;
 }
+
+/*-----------*/
+/*Forms*/
+/*-----------*/
+
 
 
