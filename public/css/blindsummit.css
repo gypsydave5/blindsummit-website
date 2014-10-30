@@ -1,11 +1,10 @@
+
 /*-----------*/
 /*TYPOGRAPHY*/
 /*-----------*/
 
 body {
     font-family: 'Courier New';
-    width: 100%;
-    position: relative;
     background: url(../images/scalpel1.JPG) 100% 10% no-repeat;
 }
 
@@ -315,6 +314,9 @@ footer #mc_embed_signup input {
 input.button {
     font-family: 'Courier New';
     display: inline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 footer h2 {
@@ -331,5 +333,15 @@ footer address {
 /*Forms*/
 /*-----------*/
 
+/*-------------*/
+/*Mobile*/
+/*-------------*/
 
-
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .left-side-bar {
+        display: none;
+    }
+}
