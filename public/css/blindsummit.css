@@ -10,11 +10,19 @@ body {
 /*LOGO*/
 /*---------*/
 
+.logo-wrapper {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+
 .logo {
     /*font-family: 'Arial';*/
     font-weight: normal;
     font-size: 30px;
-    margin: 5px 0 60px 0;
+    float: left;
 }
 
 .logo span {
@@ -22,28 +30,51 @@ body {
 }
 
 /*----------*/
+/*SOCIAL BUTTONS*/
+/*----------*/
+
+.social {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    float: right;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    line-height: 3em;
+}
+
+.social img {
+    height: 1.7em;
+    vertical-align: top;
+}
+
+/*----------*/
 /*DONATE BUTTON*/
 /*----------*/
 
 a#donate-page {
-    position: absolute;
-    bottom: 5px;
-    right: 0;
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a#donate-page:hover {
+    background: grey;
+    color: white;
+}
+
+a#donate-page img {
+    vertical-align: middle;
 }
 
 /*----------*/
 /*LAYOUT*/
 /*----------*/
 
-/*------------*/
-/*HEADER*/
-/*------------*/
-
 section.top {
     position: relative;
-    padding: 5px 0;
-    /*height: 100%;*/
-    /*height: 50px;*/
+    height: 120px;
 }
 
 .left-side-bar{
@@ -54,7 +85,7 @@ section.top {
 
 .central-content{
     float: left;
-    width: 750px;
+    max-width: 750px;
     height: 100%;
     margin: 5px;
 }
@@ -65,13 +96,13 @@ section.top {
     height: 100%;
 }
 
-section.content{
-
-}
-
 .paperclip{
     margin-top: 270px;
 }
+
+/*------------*/
+/*HEADER*/
+/*------------*/
 
 nav {
     text-transform: uppercase;
@@ -79,6 +110,7 @@ nav {
 
 section.menu {
     padding: 10px 0;
+    clear: both;
 }
 
 header section {
@@ -107,6 +139,33 @@ nav a:hover {
     background: black;
 }
 
+/*---------*/
+/*TITLE*/
+/*---------*/
+
+#title {
+    padding: 5px 0;
+}
+
+#title h1 {
+    text-align: left;
+    font-weight: normal;
+    margin: 40px 0 0 0;
+    font-size: 2.5em;
+
+}
+
+#title h1 .s-effect {
+    font-weight: bold;
+}
+
+#title h1 .inverse {
+    background: black;
+    color: white;
+    padding: 5px 5px 5px 1px;
+    font-style: italic;
+}
+
 /*-------*/
 /*NEWS ARTICLE*/
 /*-------*/
@@ -125,12 +184,11 @@ article.news {
     flex: 1;
     margin: 0;
     padding: 0;
-    height: 138px;
 }
 
 .news img.news-image {
     max-width: 100%;
-    max-height: 100%;
+    display: block;
 }
 
 .news-text {
@@ -209,12 +267,28 @@ article.news {
 /*--------*/
 
 footer {
-    text-align: right;
     font-size: 0.7em;
     padding: 10px 0;
 }
 
+footer #mc_embed_signup{
+    float: left;
+}
+
+footer #mc_embed_signup label {
+    display: none;
+}
+
+footer #mc_embed_signup input {
+    display: inline;
+
+}
+footer h2 {
+    margin: 0 5px;
+}
+
 footer address {
+    text-align: right;
     /*width: 20%;*/
     float: right;
 }
