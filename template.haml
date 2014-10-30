@@ -1,0 +1,112 @@
+!!!
+%head
+  %title Blind Summit
+  %link{:href => "css/reset.css", :rel => "stylesheet", :type => "text/css"}/
+  %link{:href => "css/blindsummit.css", :rel => "stylesheet", :type => "text/css"}/
+%body
+  .left-side-bar
+    %img.paperclip{:src => "images/paperclip.gif"}/
+  .central-content
+    %header
+      %section.top
+        .logo-wrapper
+          %h1.logo
+            BLind
+            %span> S
+            umMiT
+        .social
+          %p
+            %img{src: "images/glyphs/svg/facebook.svg"}
+            %img{src: "images/glyphs/svg/twitter.svg"}
+            %img{src: "images/glyphs/svg/youtube.svg"}
+          %p
+            %a#donate-page{href: "#"}
+              HELP THE PUPPETS! DONATE NOW ->
+              %img{src: "images/glyphs/png/justgiving.png"}
+      %section.menu
+        %nav
+          %ul
+            %li
+              %a{:href => "#"} News
+              \-
+            %li
+              %a{:href => "#"} What's on
+              \-
+            %li
+              %a{:href => "#"} Shows
+              \-
+            %li
+              %a{:href => "#"} Puppets
+              \-
+            %li
+              %a{:href => "#"} Training
+              \-
+            %li
+              %a{:href => "#"} About us
+              \-
+            %li
+              %a{:href => "#"} Support us
+              \-
+            %li
+              %a{:href => "#"} Blog
+
+    %section#title
+      %h1
+        BLind
+        <span class="s-effect">S</span>umMiT
+        %span.inverse CLICKS
+
+    %section#date
+      %h3 November 2014
+
+    %section#content
+      %article.news
+        %div.image-wrapper
+          %img.news-image{src: 'images/mosesoctober.jpg'}
+        .news-text
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
+          %a{:href => "#"} CLICK
+      %article.news
+        %div.image-wrapper
+          %img.news-image{src: 'images/tinaoctober.jpg'}
+        .news-text
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
+          %a{:href => "#"} CLICK
+
+    %section#social
+      %h2 Our latest news...
+      %article.news.latest-news
+        %div.image-wrapper
+          %img.news-image{src: 'images/mosesoctober.jpg'}
+        .news-text
+          RSS feed from Facebook and Twitter goes here
+
+    %section#puppet-quote
+      %h2 Puppetry Tip of the Month
+      %blockquote The feet tell a third of the story
+      %p Laura Caldow
+    %section#running-man
+      %img.news-image{src: 'images/bmCarry_anime.gif'}
+
+    %footer
+      #mc_embed_signup
+        %h2 Join our mailing list!
+        %form{ action:"//blindsummit.us7.list-manage.com/subscribe/post?u=7679b847fdc33f7ee2f1cc2ed&amp;id=5e7eb68b41", method:"post", id:"mc-embedded-subscribe-form", name:"mc-embedded-subscribe-form", class:"validate", target:"_blank", novalidate: true }
+          %p
+            %label{ for:"mce-EMAIL" }
+              Email Address
+            %input{ type:"email", value:"", name:"EMAIL", class:"required email", id:"mce-EMAIL", placeholder: "your email goes here" }
+            %input{type:"submit", value:"Subscribe", name:"subscribe", id:"mc-embedded-subscribe", class:"button", style:"font-family: 'Comic Sans'"}
+            #mce-responses.clear
+              .response#mce-error-response{ style:"display:none" }
+              .response#mce-success-response{ style:"display:none" }
+              %div{ style:"position: absolute; left: -5000px;" }
+                %input{ type:"text", name:"b_7679b847fdc33f7ee2f1cc2ed_5e7eb68b41", tabindex:"-1", value:""}
+
+      %address
+        Blind Summit Theatre<br />
+        Unit 10, Grenville Workshops,<br />
+        2a Grenville Road, London, N19 4EH<br />
+        020 7272 9020<br />
+        %a{:href => "mailto:info@blindsummit.com"} info@blindsummit.com
+  .right-side-bar
