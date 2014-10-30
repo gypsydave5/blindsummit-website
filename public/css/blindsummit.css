@@ -4,6 +4,9 @@
 
 body {
     font-family: 'Courier New';
+    width: 100%;
+    position: relative;
+    background: url(../images/scalpel1.JPG) 100% 10% no-repeat;
 }
 
 /*---------*/
@@ -91,9 +94,8 @@ section.top {
 }
 
 .right-side-bar{
-    float: right;
-    width: 50px;
-    height: 100%;
+    position: absolute;
+    right: 0;
 }
 
 .paperclip{
@@ -167,6 +169,23 @@ nav a:hover {
     font-style: italic;
 }
 
+
+/*------------*/
+/*DATE*/
+/*------------*/
+
+
+section#date {
+    margin: 35px 0 5px 0;
+}
+
+section#date h3 {
+    font-size: 0.9em;
+    font-weight: normal;
+    font-style: italic;
+    text-align: right;
+}
+
 /*-------*/
 /*NEWS ARTICLE*/
 /*-------*/
@@ -179,6 +198,10 @@ article.news {
     background: #eee;
     display: flex;
     border: 1px solid black;
+}
+
+article.news:first-of-type {
+    margin:  0 0;
 }
 
 .news .image-wrapper {
